@@ -1,4 +1,11 @@
 
+#
+
+# Code written by Lloyd A. Courtenay #
+# Lloyd A. Courtenay - ladc1995@gmail.com (Universidad de Salamanca [USAL]) #
+
+#
+
 # Load libraries and dependencies ----------------------------------------------------
 
 # R libraries by L.A. Courtenay
@@ -14,6 +21,7 @@ library(GraphGMM) # for Geometric Morphometrics
 # external dependencies
 
 library(geomorph) # for basic geometric morphometric functions
+library(shapes) # for basic geometric morphometric functions and the o'higgins and dryden dataset
 library(Morpho) # for the implementation of CVA and bgPCA
 library(ggplot2) # for plotting
 library(gridExtra) # for plotting
@@ -21,6 +29,7 @@ library(abind) # for matrix and tensor operations
 library(caret) # for classification
 library(gap) # for the CHOW test comparing regression lines
 library(RVAideMemoire) # for MANOVA
+library(umap) # for UMAP
 
 #
 
@@ -1214,6 +1223,14 @@ perform_classification_experiment <- function(n_lm, epsilon, beta, sigma = 1,
   
   #return(list(pca, bf_plot, result_table))
 }
+
+# this is a function for experimenting with tSNE and UMAP visualisations
+# n_lm is the number of landmarks for the base geometry
+# epsilon defines the degree of shearing that will be performed on samples 2 and 3
+# beta is the parameter of Delta beta that controls the change in centroid size for analyses in form
+# sigma is the deviation parameter for the gaussian pertubation of landmarks
+# sample_sizes is a vector of length 3 that defines the size of each of the samples to be created
+# pcs is a boolean value that defines whether pc scores should be used as input to the classification algorithms
 
 tsne_umap <- function(n_lm, epsilon, beta,
                       sample_sizes, sigma = 1,
