@@ -1,1 +1,1 @@
-# gmm_orgination_classification_toolkit
+# gmm_ordination_classification_toolkit
