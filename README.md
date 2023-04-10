@@ -26,8 +26,9 @@ Universidad de Salamanca [USAL]
 ---------------------------------------------------------------------------------------------------
 
 This code was designed and prepared for the study by:
-<b> Courtenay, L.A. (Submitted)
-Can we restore balance to Geometric Morphometrics? A theoretical evaluation of how sample imbalance conditions ordination and classification. </b>
+<b> Courtenay, L.A. (2023)
+Can we restore balance to Geometric Morphometrics? A theoretical evaluation of how sample imbalance conditions ordination and classification.
+Evoltuionary Biology. 50:90-110. https://doi.org/10.1007/s11692-022-09590-0</b>
 
 TIDOP research group website: http://tidop.usal.es/
 
